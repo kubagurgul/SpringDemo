@@ -1,2 +1,5 @@
-package com.example.demo.beans;public interface DependentBean {
+package com.example.demo.beans;
+
+public interface DependentBean {
+
 }
