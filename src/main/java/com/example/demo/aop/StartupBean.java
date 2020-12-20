@@ -1,9 +1,11 @@
-package com.example.demo.beans;
+package com.example.demo.aop;
 
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import com.example.demo.aop.PersonRepo;
 
 @Component
 public class StartupBean {

@@ -1,4 +1,4 @@
-package com.example.demo.aspects;
+package com.example.demo.aop;
 
 import org.springframework.stereotype.Component;
 
@@ -16,7 +16,7 @@ public class Monitor {
         LoggerFactory.getLogger(Monitor.class);
 
 
-    @Before("execution(public * com.example.demo.beans.PersonRepo.findAll(..))")
+    @Before("execution(public * com.example.demo.aop.PersonRepo.findAll(..))")
     public void before(JoinPoint joinPoint) {
         String methodName = joinPoint.getSignature().getName();
         logger.info(" ---> Method " + methodName + " is about to be called");
